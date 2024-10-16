@@ -4,7 +4,6 @@ body {
   font-size: 16px;
   line-height: 1.7;
   color: $color-gray-dark;
-  padding: 30px;
 }
 
 .heading-primary {
@@ -15,13 +14,20 @@ body {
   backface-visibility: hidden;
   margin-bottom: 40px;
 
+  
+
   &--main {
     display: block;
-    font-size: 60px;
+    font-size: 6rem;
     font-weight: 400;
     letter-spacing: 35px;
 
     animation: moveFromLeft 2s ease-out;
+
+    @include respond(phone){
+      letter-spacing: 1rem;
+      font-size: 5rem;
+    }
 
     /* animation-name: moveFromLeft;
         animation-duration: 2s;
@@ -30,11 +36,15 @@ body {
 
   &--sub {
     display: block;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 400;
     letter-spacing: 17.4px;
 
     animation: moveFromRight 2s ease-out;
+
+    @include respond(phone){
+      letter-spacing: 0.5rem;
+    }
 
     /* animation-name: moveFromRight;
         animation-duration: 2s;
@@ -58,6 +68,11 @@ body {
   color: transparent;
 
   transition: all 0.2s;
+
+  @include respond(tab-port){
+    font-size: 2.5rem;
+  }
+
 
   &:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
