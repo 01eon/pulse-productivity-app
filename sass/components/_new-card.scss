@@ -1,6 +1,173 @@
 .new-card {
-    perspective: 150rem;
-    -moz-perspective: 150rem;
-    position: relative;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 52rem;
+  width: 100%;
+
+  &:first-child {
+    margin-left: 3rem;
+  }
+
+  &:last-child {
+    margin-right: 3rem;
+  }
+
+  &_text {
+    background-color: $color-white;
+    padding: 3rem 0;
+    width: 100%;
+    height: 60vh;
+    position: absolute;
+    top: 6rem;
+    transform: skewY(-7deg);
+    & > * {
+      transform: skewY(7deg);
+    }
+  }
+
+  &_heading {
+    font-family: "Inter", sans-serif;
+    font-size: 3.2rem;
+    font-weight: 700;
+    // text-transform: uppercase;
+    color: $color-black;
+    width: 100%;
+    left: 4.5rem;
+    text-align: center;
+  }
+
+  &_details {
+    padding: 2rem 0;
+
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+
+      li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid $color-gray-light-2;
+        }
+      }
+    }
+  }
+
+  &_side {
     height: 52rem;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+    overflow: hidden;
+
+    // New
+    // background-image: url(../../img/Pulse/_pricing-starter.jpg);
+    // background-size: cover;
+    // background-position: right;
+
+    &--front-1 {
+        background-image: url(../../img/Pulse/_pricing-starter.jpg);
+        background-size: cover;
+        background-position: right;
+    }
+
+    &--front-2 {
+        background-image: url(../../img/Pulse/_pricing-individual.jpg);
+        background-size: cover;
+        background-position: right;
+    }
+
+    &--front-3 {
+        background-image: url(../../img/Pulse/_pricing-team.jpg);
+        background-size: cover;
+        background-position: right;
+    }
+
+    &--back {
+      transform: rotateY(180deg);
+
+
+      &-1 {
+        // New
+        background-image: url(../../img/Pulse/_pricing-starter.jpg);
+        background-size: cover;
+        background-position: left;
+      }
+
+      &-2 {
+         // New
+         background-image: url(../../img/Pulse/_pricing-individual.jpg);
+         background-size: cover;
+         background-position: left;
+      }
+
+      &-3 {
+         // New
+         background-image: url(../../img/Pulse/_pricing-team.jpg);
+         background-size: cover;
+         background-position: left;
+      }
+    }
+  }
+
+  &:hover &_side--front-1, &:hover &_side--front-2, &:hover &_side--front-3 {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &_side--back {
+    transform: rotateY(0);
+  }
+
+  // Back-side Styling
+  &_cta {
+    background-color: $color-white;
+    padding: 12rem 0;
+    width: 100%;
+    height: 60vh;
+    position: absolute;
+    top: 6rem;
+    text-align: center;
+
+    background-color: $color-white;
+    transform: skewY(7deg);
+    & > * {
+      transform: skewY(-7deg);
+    }
+
+   
+  }
+
+  &_price-box {
+    text-align: center;
+    color: $color-black;
+    margin-bottom: 3rem;
+  }
+
+  &_price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+
+  &_price-value {
+    font-size: 6rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    & span {
+        font-weight: 300;
+        font-size: 2rem;
+    }
+  }
 }

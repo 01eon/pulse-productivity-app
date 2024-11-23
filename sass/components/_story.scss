@@ -38,15 +38,28 @@
     height: 100%;
     transform: translateX(-4rem) scale(1.4);
     backface-visibility: hidden;
+    transition: all 0.5s;
   }
 
   &_text {
     transform: skewX(12deg);
     backface-visibility: hidden;
+    font-size: 1.8rem;
+    font-style: italic;
 
     @include respond(tab-port){
         transform: skewX(0);
       }
+  }
+
+  &_name {
+    font-size: 2rem;
+    color: $color-black;
+    font-style: normal;
+
+    & span {
+      font-weight: 300;
+    }
   }
 
   &_caption {

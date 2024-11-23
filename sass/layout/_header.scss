@@ -24,10 +24,10 @@
       url("../../img/Pulse/_bg-1.jpg");
     }
 
-    // @include respond(phone){
-    //   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-    // clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-    // }
+    @include respond(phone){
+        height: 75vh;
+    }
+
   
     &__logo-box {
       position: absolute;

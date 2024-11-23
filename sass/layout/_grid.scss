@@ -2,9 +2,18 @@
     max-width: $grid-width;
     margin: 0 auto;
 
+
+    &_story {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        margin: 0 10rem;
+    }
+
     &_card {
         display: flex;
-        gap: 1rem;
+        gap: 3rem;
         width: 100%;
     }
     

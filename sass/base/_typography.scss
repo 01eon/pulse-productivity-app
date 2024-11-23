@@ -26,7 +26,6 @@ body {
     animation: moveFromLeft 2s ease-out;
 
     @include respond(phone){
-      letter-spacing: 1rem;
       font-size: 5rem;
     }
 
@@ -48,7 +47,8 @@ body {
     animation: moveFromRight 2s ease-out;
 
     @include respond(phone){
-      letter-spacing: 0.5rem;
+      font-size: 2rem;
+      margin-bottom: 2rem;
     }
 
     /* animation-name: moveFromRight;
@@ -97,6 +97,7 @@ body {
   // -webkit-background-clip: text;
   // color: transparent;
 }
+
 
 .paragraph {
   font-size: $default-font-size;
