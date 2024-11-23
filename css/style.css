@@ -317,11 +317,17 @@ body {
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition: transform 0.2s; }
+  @media (max-width: 37.5em) {
+    .feature-box {
+      height: 30rem; } }
   @media (max-width: 56.25em) {
     .feature-box {
-      padding: 2rem; } }
+      padding: 2.5rem; } }
   .feature-box_icon {
     margin-bottom: 0.5rem; }
+    @media (max-width: 37.5em) {
+      .feature-box_icon {
+        width: 7rem; } }
     .feature-box_icon .path {
       fill: #0ABC9C; }
     @media (max-width: 56.25em) {
@@ -760,6 +766,10 @@ body {
     gap: 1rem;
     width: 100%;
     z-index: 3000; }
+    @media (max-width: 37.5em) {
+      .row__feature-box {
+        flex-direction: column;
+        align-items: center; } }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
     @media (max-width: 56.25em) {
@@ -1014,9 +1024,14 @@ $breakpoint argument choices:
   height: 55rem;
   z-index: 100;
   border-radius: 10px; }
-  @media (max-width: 56.25em) {
+  @media (max-width: 37.5em) {
     .section-about {
-      padding: 20rem 8rem; } }
+      position: relative;
+      left: 0;
+      transform: translateX(0);
+      width: 100%;
+      margin-top: 0rem;
+      padding: 5rem 3rem; } }
 
 .section-features {
   position: relative;
@@ -1024,9 +1039,13 @@ $breakpoint argument choices:
   padding: 35rem 0 15rem;
   background-image: linear-gradient(to right, rgba(52, 73, 94, 0.8), rgba(44, 62, 80, 0.8)), url("../img/nat-4.jpg");
   background-size: cover;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 84%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 84%, 0 100%);
   margin-top: 11rem; }
+  @media (max-width: 37.5em) {
+    .section-features {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
   @media (max-width: 56.25em) {
     .section-features {
       padding: 10rem 0; } }

@@ -19,9 +19,19 @@
   z-index: 100;
   border-radius: 10px;
 
-  @include respond(tab-port) {
-    padding: 20rem 8rem;
+  @include respond(phone){
+    position: relative;
+    left: 0;
+    transform: translateX(0);
+    width: 100%;
+    margin-top: 0rem;
+    padding: 5rem 3rem;
   }
+
+  // @include respond(tab-port) {
+  //   padding: 20rem 8rem;
+  // }
+
 
 }
 
@@ -37,7 +47,7 @@
     ),
     url("../img/nat-4.jpg");
   background-size: cover;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 84%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 84%, 0 100%);
 
   
@@ -46,6 +56,11 @@
   // & > * {
   //   transform: skewY(7deg);
   // }
+
+  @include respond(phone){
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
 
 
   @include respond(tab-port) {
@@ -59,7 +74,6 @@
   background-color: $color-gray-light-1;
   padding: 3rem 0 15rem;
 
- 
 
   @include respond(tab-port) {
     padding: 20rem 0 10rem 0;
@@ -67,8 +81,6 @@
 }
 
 .section-stories {
-  
-
   position: relative;
   padding: 15rem 0;
   // background-color:  $color-gray-light-1;

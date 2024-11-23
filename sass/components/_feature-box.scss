@@ -9,14 +9,21 @@
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
     transition: transform 0.2s;
 
+    @include respond(phone){
+        height: 30rem;
+    }
+
     @include respond(tab-port){
-        padding: 2rem;
+        padding: 2.5rem;
     }
 
 
     &_icon {
         // font-size: 6rem;
         margin-bottom: 0.5rem;
+        @include respond(phone){
+         width: 7rem;
+        }
         // background-image: linear-gradient(to right, rgba($color-secondary-light, 0.8), rgba($color-secondary-dark, 0.8));
         // -webkit-background-clip: text;
         // color: transparent;
@@ -33,6 +40,8 @@
     &_text {
         font-size: 1.7rem;
         color: #000;
+
+
     }
 
     &:hover {
