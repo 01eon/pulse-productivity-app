@@ -51,8 +51,9 @@
       font-weight: 700;
       padding: 1rem 8rem;
 
-      @include respond(phone){
+      @include respond(tab-port){
         font-size: 1.8rem;
+        padding: 1rem 10rem;
       }
     }
   

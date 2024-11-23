@@ -11,10 +11,13 @@
 
     @include respond(phone){
         height: 30rem;
+        width: 30rem;
     }
 
     @include respond(tab-port){
         padding: 2.5rem;
+        width: 35rem;
+        height: 28rem;
     }
 
 

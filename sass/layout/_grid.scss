@@ -2,6 +2,12 @@
     max-width: $grid-width;
     margin: 0 auto;
 
+    &_footer {
+        @include respond(tab-port){
+            max-width: $grid-width + 5rem;
+        }
+        
+    }
 
     &_story {
         display: flex;
@@ -9,12 +15,20 @@
         justify-content: center;
         gap: 2rem;
         margin: 0 10rem;
+
+        @include respond(tab-port) {
+            margin: 0 3rem;
+          }
     }
 
     &_card {
         display: flex;
         gap: 3rem;
         width: 100%;
+
+        @include respond(tab-port){
+            flex-direction: column;
+        }
     }
     
     &__feature-box {
@@ -24,7 +38,7 @@
         width: 100%;
         z-index: 3000;
 
-        @include respond(phone){
+        @include respond(tab-port){
             flex-direction: column;
             align-items: center;
         }
