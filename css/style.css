@@ -232,7 +232,8 @@ body {
   border: 1px solid #ff4d4f;
   background-color: #fff;
   color: #ff4d4f;
-  font-size: 2rem; }
+  font-size: 2rem;
+  padding: 1rem 6rem; }
   .btn-cta:hover {
     background-color: #ff4d4f;
     color: #fff; }
@@ -350,23 +351,13 @@ body {
   position: relative;
   height: 52rem;
   width: 100%; }
-  .new-card:first-child {
-    margin-left: 3rem; }
-    @media (max-width: 56.25em) {
-      .new-card:first-child {
-        margin-left: 0; } }
-  .new-card:last-child {
-    margin-right: 3rem; }
-    @media (max-width: 56.25em) {
-      .new-card:last-child {
-        margin-right: 0; } }
   .new-card_text {
     background-color: #fff;
     padding: 3rem 0;
     width: 100%;
-    height: 75vh;
+    height: 70vh;
     position: absolute;
-    top: 4rem;
+    top: 3rem;
     transform: skewY(-7deg); }
     .new-card_text > * {
       transform: skewY(7deg); }
@@ -418,31 +409,25 @@ body {
       background-image: url(../../img/Pulse/_pricing-team.jpg);
       background-size: cover;
       background-position: right; }
-    .new-card_side--back {
-      transform: rotateY(180deg); }
-      .new-card_side--back-1 {
-        background-image: url(../../img/Pulse/_pricing-starter.jpg);
-        background-size: cover;
-        background-position: left; }
-      .new-card_side--back-2 {
-        background-image: url(../../img/Pulse/_pricing-individual.jpg);
-        background-size: cover;
-        background-position: left; }
-      .new-card_side--back-3 {
-        background-image: url(../../img/Pulse/_pricing-team.jpg);
-        background-size: cover;
-        background-position: left; }
-  .new-card:hover .new-card_side--front-1, .new-card:hover .new-card_side--front-2, .new-card:hover .new-card_side--front-3 {
-    transform: rotateY(-180deg); }
-  .new-card:hover .new-card_side--back {
-    transform: rotateY(0); }
+    .new-card_side--back-1 {
+      background-image: url(../../img/Pulse/_pricing-starter.jpg);
+      background-size: cover;
+      background-position: left; }
+    .new-card_side--back-2 {
+      background-image: url(../../img/Pulse/_pricing-individual.jpg);
+      background-size: cover;
+      background-position: left; }
+    .new-card_side--back-3 {
+      background-image: url(../../img/Pulse/_pricing-team.jpg);
+      background-size: cover;
+      background-position: left; }
   .new-card_cta {
     background-color: #fff;
-    padding: 12rem 0;
+    padding: 15rem 0;
     width: 100%;
-    height: 60vh;
+    height: 70vh;
     position: absolute;
-    top: 6rem;
+    top: 3rem;
     text-align: center;
     background-color: #fff;
     transform: skewY(7deg); }
