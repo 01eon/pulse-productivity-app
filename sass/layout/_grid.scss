@@ -1,15 +1,18 @@
 .row {
     max-width: $grid-width;
     margin: 0 auto;
-    
-    &__feature-box {
-        position: absolute;
+
+    &_card {
         display: flex;
         gap: 1rem;
         width: 100%;
-        overflow-block: auto;
-        left: 50%;
-        transform: translateX(-50%);
+    }
+    
+    &__feature-box {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        width: 100%;
         z-index: 3000;
     }
 

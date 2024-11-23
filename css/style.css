@@ -290,10 +290,10 @@ body {
 
 .feature-box {
   height: 32rem;
-  width: 34rem;
+  width: 30rem;
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 1.5rem;
-  padding: 3rem;
+  padding: 3rem 4rem;
   text-align: center;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
@@ -448,6 +448,12 @@ body {
         margin-bottom: 3rem; }
       .card_price-value {
         font-size: 4rem; } }
+
+.new-card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 52rem; }
 
 .story {
   width: 75%;
@@ -734,14 +740,15 @@ body {
 .row {
   max-width: 114rem;
   margin: 0 auto; }
-  .row__feature-box {
-    position: absolute;
+  .row_card {
     display: flex;
     gap: 1rem;
+    width: 100%; }
+  .row__feature-box {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
     width: 100%;
-    overflow-block: auto;
-    left: 50%;
-    transform: translateX(-50%);
     z-index: 3000; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
@@ -995,11 +1002,11 @@ $breakpoint argument choices:
 .section-features {
   position: relative;
   width: 100%;
-  padding: 35rem 0 45rem;
+  padding: 35rem 0 15rem;
   background-image: linear-gradient(to right, rgba(52, 73, 94, 0.8), rgba(44, 62, 80, 0.8)), url("../img/nat-4.jpg");
   background-size: cover;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 84%, 0 100%);
   margin-top: 11rem; }
   @media (max-width: 56.25em) {
     .section-features {
