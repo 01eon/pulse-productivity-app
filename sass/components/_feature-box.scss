@@ -1,5 +1,6 @@
 .feature-box {
-
+    height: 32rem;
+    width: 34rem;
     background-color: rgba($color-white, 0.8);
     font-size: 1.5rem;
     padding: 3rem;
@@ -14,16 +15,24 @@
 
 
     &_icon {
-        font-size: 6rem;
+        // font-size: 6rem;
         margin-bottom: 0.5rem;
-        background-image: linear-gradient(to right, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8));
-        -webkit-background-clip: text;
-        color: transparent;
+        // background-image: linear-gradient(to right, rgba($color-secondary-light, 0.8), rgba($color-secondary-dark, 0.8));
+        // -webkit-background-clip: text;
+        // color: transparent;
+        & .path {
+            fill: #0ABC9C;
+        }
 
         @include respond(tab-port){
             margin-bottom: 0;
         }
     
+    }
+
+    &_text {
+        font-size: 1.7rem;
+        color: #000;
     }
 
     &:hover {

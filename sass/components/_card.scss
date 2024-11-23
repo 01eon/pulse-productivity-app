@@ -4,9 +4,21 @@
   position: relative;
   height: 52rem;
 
+  &_text {
+    background-color: $color-white;
+    padding: 5rem 0;
+    width: 100%;
+    height: 68vh;
+    position: absolute;
+    top: 3rem;
+    transform: skewY(-7deg);
+    & > * {
+      transform: skewY(7deg);
+    }
+  }
+
   &_side {
     height: 52rem;
-    // font-size: 5rem;
     transition: all 0.8s ease;
     position: absolute;
     top: 0;
@@ -16,6 +28,12 @@
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
     overflow: hidden;
+
+
+    // New
+    background-image: url(../../img/Pulse/_composition-photo-1.jpg);
+    background-size: cover;
+    background-position: right;
 
     &--front {
       background-color: $color-white;
@@ -35,8 +53,8 @@
       &-2 {
         background-image: linear-gradient(
           to right bottom,
-          $color-primary-light,
-          $color-primary-dark
+          $color-secondary-light,
+          $color-secondary-dark
         );
       }
 
@@ -69,7 +87,7 @@
     border-top-right-radius: 3px;
 
     &--1 {
-      background-image: url(../img/nat-5.jpg),
+      background-image: url(../../img/Pulse/_composition-photo-1.jpg),
         linear-gradient(
           to right bottom,
           $color-secondary-light,
@@ -78,11 +96,11 @@
     }
 
     &--2 {
-      background-image: url(../img/nat-6.jpg),
+      background-image: url(../../img/Pulse/_composition-photo-2.jpg),
         linear-gradient(
           to right bottom,
-          $color-primary-light,
-          $color-primary-dark
+          $color-secondary-light,
+          $color-secondary-dark
         );
     }
 
@@ -97,15 +115,15 @@
   }
 
   &_heading {
-    font-size: 2.8rem;
-    font-weight: 300;
+    font-family: "Inter", sans-serif;
+    font-size: 3.2rem;
+    font-weight: 700;
     text-transform: uppercase;
-    color: $color-white;
+    color: $color-black;
 
     position: absolute;
-    top: 12rem;
-    right: 2rem;
-    text-align: right;
+    left: 4.5rem;
+    text-align: center;
     width: 75%;
   }
 
@@ -125,8 +143,8 @@
     &--2 {
       background-image: linear-gradient(
         to right bottom,
-        rgba($color-primary-light, 0.85),
-        rgba($color-primary-dark, 0.85)
+        rgba($color-secondary-light, 0.85),
+        rgba($color-secondary-dark, 0.85)
       );
     }
 
@@ -140,7 +158,10 @@
   }
 
   &_details {
-    padding: 3rem;
+    // padding: 3rem;
+
+    // New 
+    padding: 12rem 0;
 
     ul {
       list-style: none;
