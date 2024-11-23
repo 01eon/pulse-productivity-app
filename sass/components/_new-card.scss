@@ -1,25 +1,11 @@
 .new-card {
-  // perspective: 150rem;
-  // -moz-perspective: 150rem;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
   position: relative;
   height: 52rem;
   width: 100%;
 
 
-  // &:first-child {
-  //   margin-left: 3rem;
-  //   @include respond(tab-port){
-  //   margin-left: 0;
-  //   }
-  // }
-
-  // &:last-child {
-  //   margin-right: 3rem;
-  //   @include respond(tab-port){
-  //     margin-right: 0;
-  //   }
-
-  // }
 
   &_text {
     background-color: $color-white;
